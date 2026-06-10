@@ -46,6 +46,7 @@ export class TradingSignalAnalyzer {
 
   private calculateRSI(technical: any): number {
     // Simplified RSI calculation
+    // In production, calculate from actual price history
     return technical?.rsi || 50;
   }
 
